@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f0e6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: #cd853f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8b4513;
+}
+
+main {
+    max-width:  1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.seccion {
+    background-color: white;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.seccion h3 {
+    color: #8b4513;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #cd853f;
+    padding-bottom: 0.5rem;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.imagen-seccion {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    float: right;
+    margin-left: 1.5rem;
+}
+
+.seccion ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.seccion ul li {
+    margin-bottom: 0.5rem;
+}
+
+#boton-contacto {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#boton-contacto:hover {
+    background-color: #cd853f;
+}
+
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-seccion {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+  }
+
